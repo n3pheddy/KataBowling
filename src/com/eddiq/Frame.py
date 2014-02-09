@@ -38,14 +38,11 @@ class Frame:
     
     def getScore(self):
         bothTries = self.getScoreForBothTries()
-        if (self.nextFrame == None or bothTries < Frame.STRIKE):
+        if (self.nextFrame is None or bothTries < Frame.STRIKE):
             return bothTries
         # Check for strike
         firstTry = self.getScoreForFirstTry()
         if firstTry == Frame.STRIKE:
-            if self.nextFrame is None:
-                return bothTries
-
             nextFrameFirstTry = self.nextFrame.getScoreForFirstTry()
             score = bothTries + nextFrameFirstTry
             
