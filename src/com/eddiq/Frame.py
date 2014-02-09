@@ -45,12 +45,13 @@ class Frame:
         if firstTry == Frame.STRIKE:
             nextFrameFirstTry = self.nextFrame.getScoreForFirstTry()
             score = bothTries + nextFrameFirstTry
-            
-            twoFramesForward = self.nextFrame.nextFrame
+
             if nextFrameFirstTry < Frame.STRIKE:
                 score += self.nextFrame.getScoreForSecondTry()
-            elif twoFramesForward is not None:
-                score += self.nextFrame.nextFrame.getScoreForFirstTry()
+            else:
+                twoFramesForward = self.nextFrame.nextFrame
+                if twoFramesForward is not None:
+                    score += self.nextFrame.nextFrame.getScoreForFirstTry()
             return score
         # It's a spare
         return bothTries + self.nextFrame.getScoreForFirstTry()
