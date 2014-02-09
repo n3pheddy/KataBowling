@@ -5,8 +5,8 @@ A Practise based on description from http://codingdojo.org/cgi-bin/wiki.pl?KataB
 
 Recommended by [Zhuo Hong Wei](https://github.com/zhuohongwei/), I used this opportunity to learn Python in addition to keeping my instincts sharpened. It took me about 3 hours.
 
-Excerpt from http://codingdojo.org/cgi-bin/wiki.pl?KataBowling:
----------------------------------------------------------------
+Excerpt from http://codingdojo.org/cgi-bin/wiki.pl?KataBowling
+--------------------------------------------------------------
 
 This description is based on that at www.xprogramming.com/xpmag/acsBowling.htm
 
