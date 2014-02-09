@@ -38,6 +38,8 @@ class BowlingGame:
             print "%d) %s" % (i + 1, frame.toString(i + 1 == BowlingGame.FRAMES))
             
         print "Final score is: %d" % finalScore
+        
+# From this point onwards, main procedure and test code
 
 # All strikes
 def tc1_allStrikes():
@@ -93,6 +95,7 @@ def tc1_allStrikes():
     
     bowlingGame.printScores()
     
+# 9,0 for all frames
 def tc2_9nils():
     bowlingGame = BowlingGame()
 
@@ -138,6 +141,7 @@ def tc2_9nils():
     
     bowlingGame.printScores()
     
+# 5 for all attempts, including bonus
 def tc3_all5s():
     bowlingGame = BowlingGame()
 
@@ -186,6 +190,7 @@ def tc3_all5s():
     
     bowlingGame.printScores()
 
+# Main procedure here
 if __name__ == '__main__':
     tc1_allStrikes()
     tc2_9nils()
