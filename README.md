@@ -48,6 +48,43 @@ Comments from those who have mastered this Kata
 
 Write some thoughts here about what you have learnt from this Kata. You don't have to post all the code of your solution - I think the solution in itself is less interesting than the path you took to get there and what decisions you made. Just seeing the code won't necessarily help me to reproduce it for myself. So in this section various people might go through the main parts of the problem and how they tackled them, what design ideas were discarded, and which order the test cases were implemented in.
 
-    One interesting point to note is that without counting frames in any way (although I don't think this was intended as a 'hard' requirement for the initial Kata completion), finding an elegant way to identify the end of the game/last "real" frame becomes difficult (ie: assuming there are final 'bonus' rolls included in a given test case). Update: After trying various things, including writing out a logic matrix for possible end-of-game combinations, I'm not sure it's possible to detect whether a final 'throw' counts as bonus-only or as part of an actual frame, unless you're counting frames. -- [RudyXDesjardins](http://codingdojo.org/cgi-bin/wiki.pl?RudyXDesjardins)
+    One interesting point to note is that without counting frames in any way (although I don't think this was intended as a 'hard' requirement for the initial Kata completion), finding an elegant way to identify the end of the game/last "real" frame becomes difficult (ie: assuming there are final 'bonus' rolls included in a given test case). Update: After trying various things, including writing out a logic matrix for possible end-of-game combinations, I'm not sure it's possible to detect whether a final 'throw' counts as bonus-only or as part of an actual frame, unless you're counting frames. -- RudyXDesjardins
 
 [KataBowlingByAndreasLarsson](http://codingdojo.org/cgi-bin/wiki.pl?KataBowlingByAndreasLarsson)
+
+Output
+------
+
+1) 10,0 (30)
+2) 10,0 (30)
+3) 10,0 (30)
+4) 10,0 (30)
+5) 10,0 (30)
+6) 10,0 (30)
+7) 10,0 (30)
+8) 10,0 (30)
+9) 10,0 (30)
+10) 10,0, [10,0, [10,0 (10)] (20)] (30)
+Final score is: 300
+1) 9,0 (9)
+2) 9,0 (9)
+3) 9,0 (9)
+4) 9,0 (9)
+5) 9,0 (9)
+6) 9,0 (9)
+7) 9,0 (9)
+8) 9,0 (9)
+9) 9,0 (9)
+10) 9,0 (9)
+Final score is: 90
+1) 5,5 (15)
+2) 5,5 (15)
+3) 5,5 (15)
+4) 5,5 (15)
+5) 5,5 (15)
+6) 5,5 (15)
+7) 5,5 (15)
+8) 5,5 (15)
+9) 5,5 (15)
+10) 5,5, [5,0 (5)] (15)
+Final score is: 150
