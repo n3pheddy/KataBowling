@@ -27,9 +27,6 @@ class BowlingGame:
         self.frames.append(self.currentFrame)
     
     def printScores(self):
-        if len(self.frames) == 0:
-            print 'No throws!'
-            
         finalScore = 0
         
         for i in xrange(min(len(self.frames), BowlingGame.FRAMES)):    
